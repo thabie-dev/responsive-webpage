@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <style>
+        
+            .fullname{
+                
+                text-align:center;
+                color: rgb(66, 6, 38);
+                
+            }
+            
+            .div-fullname{
+                margin:60px;
+                padding:20px;
+            }
+            
+            .city-question{
+                margin-bottom:30px;
+            }
+            
+            
+            .historical{
+            
+                margin-top:50px;
+                margin-bottom:50px;
+            }
+
+            .picture_thabi{
+                background-image: url("Table-Mountain.png")
+                
+
+            }
+            .design{
+                color: rgb(128, 4, 128);
+            }
+            
+        
+
+              html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  line-height: 1;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+
+  body{
+             background-color:rgb(7, 80, 85)
+             }
+             table {
+             font-family: arial, sans-serif;
+             border-collapse: collapse;
+             width: 100%;
+            }
+
+             td, th {
+             border: 1px solid #dddddd;
+             text-align: left;
+             padding: 8px;
+             }
+             .cool {
+  
+             padding: 1em;
+             border: 5px solid;
+             margin: 1em;
+             border-radius: 1em;
+             display: inline-block;
+             }
+}
+        
+        </style>
+    </head>
+    
+    <body>
+    
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- This content will take up 3/12 (or 1/4) of the container -->
+        <div class="box">
+            <div class="col-12 cool picture_thabi historical">
+                column-width: 2000px;
+                <div class="row">
+                    <div class="col-6">
+                        <div class="div-fullname">
+                            <h2 class="fullname">Thabile Dube<h2>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 ">
+                        <img src="thabi.png" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 cool historical">
+                    <div class="city-question">
+                        <h3 class="design">Singapore</h3>
+                        <ul class="menu">
+                            <li><a href="https://www.thebestsingapore.com/best-travel-guide/the-10-best-things-to-do-in-singapore/" >Things to do in Singapore</a></li>
+                        </ul>
+                    </div>
+                </div>      
+            </div>
+        </div>   
+    </div>
+   </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <img src="singapore.png" width="500">
+    </div>
+    <div class="col-6">
+<p>
+    Besides its beauty, Singapore is a city, a nation and a state which has been ranked number one smart city global. Besides this it also has interesting islands, i can just feel it is a country of tranquility      
+</p>
+    </div>
+</div>
+
+    
+<div class="row">
+    <div class="col-12">
+        <div class="table">
+            <table border="5"class="table">
+                 <h3 class="design">Foreign Language</h3> <p class="design">French</p>
+                <tr><td> Hello Thabile</td><td>Bonjour Thabile</td></tr>
+                <tr><td>I would like to travel with you</td><td>je voudrais voyager avec toi</td></tr>
+                <tr><td>where are you from?</td><td>d'où viens-tu</td></tr>
+                <tr><td>May God bless your</td><td>Que Dieu bénisse votre</td></tr>
+                <tr><td>I love you</td><td>Je vous aime</td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h3 class="design">Historical Places in Johannesburg</h3>   
+<li><a href="https://www.planetware.com/tourist-attractions-/johannesburg-saf-gp-jo.htm" >Click here for more information</a></li>
+
+<div class="row">
+      <div class="col-4">
+        <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <h2>Constitution Hill</h2>
+            <img src="constitution-hill.png" width="200" height="200">
+            <p>Overlooking the city of Johannesburg, Constitution Hill is a former prison, which provides fascinating insight into South Africa's history. At the site, you can explore provocative exhibits at the Number Four museum, the Women's Gaol museum, and the Old Fort museum. Together, the precinct was once known as The Fort, and it forged a reputation for its brutal treatment of political prisoners, common criminals, and passive resistors; famous former prisoners include Nelson Mandela and Mahatma Gandhi.</p>   
+     </div>
+     
+     <div class="col-4">
+        <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <h2>Gold reef city</h2>
+            <img src="gold-reef-city.png" width="200" height="200">
+            <p>Gold Reef City, eight kilometers from the city center, takes you back to the gold rush days through a series of thrilling theme park rides and historical exhibits. This family-friendly attraction hosts reproductions of buildings and businesses from the era, and you can also tour a disused shaft of the Crown Mines, one of the richest gold-mines in the world.</p>
+     </div>
+
+     <div class="col-4">
+        <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <h2>Hector pieterson memoria</h2>
+            <img src="hector-pieterson.png" width="200" height="200">
+            <p>Hector Pieterson Memorial and Museum honors the brave students who protested apartheid during the Soweto Uprisings, some of whom were shot by police, including the museum's namesake, who was only 12 years old.</p>
+     </div>
+
+ </div>
+</body>             
+<footer>
+</footer>
+
+</html>
